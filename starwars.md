@@ -1,9 +1,9 @@
 Test of rendering an R script
 ================
-By Steven
-07 November, 2018
+Steven
+07 November 2018
 
-Here I'm testing out how to put special \#' comments into an ordinary old R script, so that RStudio can turn it into nicely formatted markdown for me. This bit should come out as text. Whereas with a normal \# comment, what comes looks like part of the code.
+Here I'm testing out how to put special \#' comments into an ordinary old R script, so that RStudio can turn it into nicely formatted markdown for me. This bit should come out as text. Whereas with a normal \# comment, what comes next looks like part of the code.
 
 ``` r
 # Load packages

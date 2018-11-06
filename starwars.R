@@ -1,14 +1,14 @@
 #' ---
 #' title: "Test of rendering an R script"
-#' author: "By Steven"
-#' date: '`r format(Sys.Date(), "%d %B, %Y")`'
+#' author: "Steven"
+#' date: '`r format(Sys.Date(), "%d %B %Y")`'
 #' output: github_document
 #' ---
 
 #' Here I'm testing out how to put special #' comments into an ordinary old R
 #' script, so that RStudio can turn it into nicely formatted markdown for me.
 #' This bit should come out as text. Whereas with a normal # comment, what comes
-#' looks like part of the code.
+#' next looks like part of the code.
 
 # Load packages
 library(tidyverse)
