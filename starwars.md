@@ -24,7 +24,7 @@ library(tidyverse)
 Hmmm... I wonder if there is a way to hide the **result** of running *some chunk of code* from appearing in the markdown file? R attaching packages is not very interesting. (Note adding some **bold** and *italics* there.)
 
 Now I'll write some code to plot the heights of Star Wars characters, arranged by species. The markdown file should contain both the code and the plot that it generates.
-Also adding a special \#+ comment gives an (invisible?) label to this code chunk --- which is useful in that it means the picture file of the plot R generates for markdown is given a meaningful name.
+Also adding a special \#+ comment gives an (invisible?) label to this code chunk - which is useful in that it means the picture file of the plot R generates for markdown is given a meaningful name.
 
 ``` r
 # Extract data from the starwars dataframe that comes with the dplyr package
@@ -48,6 +48,6 @@ starwars_heights %>%
   ggtitle("Which Star Wars species are the tallest?")
 ```
 
-![](starwars_files/figure-markdown_github/species%20height%20plot-1.png)
+![](starwars_files/figure-markdown_github/species_height_plot-1.png)
 
 Amazing! I'll push this to GitHub to see how it looks there.

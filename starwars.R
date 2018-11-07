@@ -21,10 +21,10 @@ library(tidyverse)
 #' arranged by species. The markdown file should contain both the code and the
 #' plot that it generates.  
 #' Also adding a special #+ comment gives an (invisible?) label to this code
-#' chunk --- which is useful in that it means the picture file of the plot R
+#' chunk - which is useful in that it means the picture file of the plot R
 #' generates for markdown is given a meaningful name.
 
-#+ species height plot
+#+ species_height_plot
 # Extract data from the starwars dataframe that comes with the dplyr package
 starwars_heights <- starwars %>%
   select(name, species, height) %>%
