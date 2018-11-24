@@ -11,7 +11,8 @@
 #' appears as part of the code.
 
 # Load packages
-library(tidyverse)
+library(dplyr)
+library(ggplot2)
 
 #' Hmmm... I wonder if there is a way to hide the **result** of running
 #' *some chunk of code* from appearing in the markdown file? R attaching packages

@@ -1,30 +1,45 @@
 Test of rendering an R script
 ================
 Steven
-07 November 2018
+24 November 2018
 
-Here I'm testing out how to put special \#' comments into an ordinary old R script, so that RStudio can turn it into nicely formatted markdown for me. This bit should come out as text. Whereas a line with a normal \# comment appears as part of the code.
+Here I’m testing out how to put special \#’ comments into an ordinary
+old R script, so that RStudio can turn it into nicely formatted markdown
+for me. This bit should come out as text. Whereas a line with a normal
+\# comment appears as part of the code.
 
 ``` r
 # Load packages
-library(tidyverse)
+library(dplyr)
 ```
 
-    ## ── Attaching packages ─────────────────────────────────────────────── tidyverse 1.2.1 ──
+    ## 
+    ## Attaching package: 'dplyr'
 
-    ## ✔ ggplot2 3.1.0     ✔ purrr   0.2.5
-    ## ✔ tibble  1.4.2     ✔ dplyr   0.7.7
-    ## ✔ tidyr   0.8.2     ✔ stringr 1.3.1
-    ## ✔ readr   1.1.1     ✔ forcats 0.3.0
+    ## The following objects are masked from 'package:stats':
+    ## 
+    ##     filter, lag
 
-    ## ── Conflicts ────────────────────────────────────────────────── tidyverse_conflicts() ──
-    ## ✖ dplyr::filter() masks stats::filter()
-    ## ✖ dplyr::lag()    masks stats::lag()
+    ## The following objects are masked from 'package:base':
+    ## 
+    ##     intersect, setdiff, setequal, union
 
-Hmmm... I wonder if there is a way to hide the **result** of running *some chunk of code* from appearing in the markdown file? R attaching packages is not very interesting. (Note adding some **bold** and *italics* there.)
+``` r
+library(ggplot2)
+```
 
-Now I'll write some code to plot the heights of Star Wars characters, arranged by species. The markdown file should contain both the code and the plot that it generates.
-Also adding a special \#+ comment gives an (invisible?) label to this code chunk - which is useful in that it means the picture file of the plot R generates for markdown is given a meaningful name.
+Hmmm… I wonder if there is a way to hide the **result** of running *some
+chunk of code* from appearing in the markdown file? R attaching packages
+is not very interesting. (Note adding some **bold** and *italics*
+there.)
+
+Now I’ll write some code to plot the heights of Star Wars characters,
+arranged by species. The markdown file should contain both the code and
+the plot that it generates.  
+Also adding a special \#+ comment gives an (invisible?) label to this
+code chunk - which is useful in that it means the picture file of the
+plot R generates for markdown is given a meaningful
+name.
 
 ``` r
 # Extract data from the starwars dataframe that comes with the dplyr package
@@ -48,6 +63,6 @@ starwars_heights %>%
   ggtitle("Which Star Wars species are the tallest?")
 ```
 
-![](starwars_files/figure-markdown_github/species_height_plot-1.png)
+![](starwars_files/figure-gfm/species_height_plot-1.png)<!-- -->
 
-Amazing! I'll push this to GitHub to see how it looks there.
+Amazing\! I’ll push this to GitHub to see how it looks there.
